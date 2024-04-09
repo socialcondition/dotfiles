@@ -8,8 +8,6 @@
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
-alias tor-browser="/home/tijani/.local/bin/tor-browser/start-tor-browser.desktop"
-alias octopi="/usr/bin/octopi"
 alias w="cd /home/tijani/workspace"
 alias ps="proxychains -q"
 export PATH="/home/tijani/.local/bin:$PATH"
