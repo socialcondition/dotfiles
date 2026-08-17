@@ -1,0 +1,107 @@
+{
+    "height": 28,
+    "spacing": 0,
+
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+
+    "modules-center": [],
+
+    "modules-right": [
+        "disk",
+        "cpu",
+        "memory",
+        "pulseaudio",
+        "network",
+        "clock#date",
+        "clock#time"
+    ],
+
+    // ─────────────────────────────────────────────
+    // HYPRLAND WORKSPACES
+    // ─────────────────────────────────────────────
+
+    "hyprland/workspaces": {
+        "format": "{id}",
+        "all-outputs": true,
+        "disable-scroll": true,
+        "on-click": "activate",
+        "sort-by": "id"
+    },
+
+    // ─────────────────────────────────────────────
+    // DISK
+    // ─────────────────────────────────────────────
+
+    "disk": {
+        "path": "/",
+        "format": "DISK {percentage_used}%",
+        "tooltip": true,
+        "tooltip-format": "Disk: {used} / {total}\nUsed: {percentage_used}%"
+    },
+
+    // ─────────────────────────────────────────────
+    // CPU
+    // ─────────────────────────────────────────────
+
+    "cpu": {
+        "format": "CPU {usage}%",
+        "tooltip": false
+    },
+
+    // ─────────────────────────────────────────────
+    // RAM
+    // ─────────────────────────────────────────────
+
+    "memory": {
+        "format": "RAM {percentage}%",
+        "tooltip": false
+    },
+
+    // ─────────────────────────────────────────────
+    // VOLUME
+    // ─────────────────────────────────────────────
+
+    "pulseaudio": {
+        "format": "VOL {volume}%",
+        "format-muted": "VOL MUTED",
+        "format-bluetooth": "VOL {volume}%",
+        "format-bluetooth-muted": "VOL MUTED",
+        "on-click": "pavucontrol",
+        "tooltip": false
+    },
+
+    // ─────────────────────────────────────────────
+    // NETWORK
+    // ─────────────────────────────────────────────
+
+    "network": {
+        "format-wifi": "{essid}  {ipaddr}",
+        "format-ethernet": "{ipaddr}",
+        "format-linked": "{ifname}",
+        "format-disconnected": "OFFLINE",
+        "format-alt": "{ifname}  {ipaddr}",
+
+        "tooltip": true,
+        "tooltip-format": "Interface: {ifname}\nWi-Fi: {essid}\nIP: {ipaddr}"
+    },
+
+    // ─────────────────────────────────────────────
+    // DATE
+    // ─────────────────────────────────────────────
+
+    "clock#date": {
+        "format": "{:%d %b %Y}",
+        "tooltip": false
+    },
+
+    // ─────────────────────────────────────────────
+    // TIME
+    // ─────────────────────────────────────────────
+
+    "clock#time": {
+        "format": "{:%H:%M}",
+        "tooltip": false
+    }
+}

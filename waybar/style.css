@@ -1,0 +1,149 @@
+* {
+    font-family: "JetBrainsMono Nerd Font", "DejaVu Sans Mono", monospace;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+window#waybar {
+    background: rgba(31, 34, 29, 0.72);
+    color: #d8d1b8;
+
+    border: none;
+    border-bottom: 1px solid rgba(180, 170, 135, 0.14);
+
+    transition-property: background-color;
+    transition-duration: 0.3s;
+}
+
+
+/* =========================================================
+   HYPRLAND WORKSPACES
+   ========================================================= */
+
+#workspaces {
+    margin: 0;
+    padding: 0 4px;
+}
+
+#workspaces button {
+    min-width: 24px;
+
+    padding: 0 7px;
+    margin: 0;
+
+    border: none;
+    border-radius: 0;
+
+    background: transparent;
+
+    color: rgba(216, 209, 184, 0.38);
+
+    box-shadow: none;
+}
+
+#workspaces button:hover {
+    background: rgba(216, 209, 184, 0.06);
+    color: #d8d1b8;
+    box-shadow: none;
+}
+
+#workspaces button.active {
+    background: transparent;
+    color: #e3dcc5;
+
+    box-shadow: inset 0 -2px #b8a978;
+}
+
+#workspaces button.urgent {
+    background: transparent;
+    color: #c97968;
+
+    box-shadow: inset 0 -2px #c97968;
+}
+
+
+/* =========================================================
+   MODULES
+   ========================================================= */
+
+#disk,
+#cpu,
+#memory,
+#pulseaudio,
+#network,
+#clock {
+    padding: 0 10px;
+    margin: 0;
+
+    background: transparent;
+    color: #d8d1b8;
+}
+
+
+/* =========================================================
+   SEPARATORS
+   ========================================================= */
+
+#disk,
+#cpu,
+#memory,
+#pulseaudio,
+#network,
+#clock.date {
+    border-right: 1px solid rgba(216, 209, 184, 0.12);
+}
+
+
+/* =========================================================
+   HOVER
+   ========================================================= */
+
+#disk:hover,
+#cpu:hover,
+#memory:hover,
+#pulseaudio:hover,
+#network:hover,
+#clock:hover {
+    background: rgba(216, 209, 184, 0.06);
+    color: #eee8d0;
+}
+
+
+/* =========================================================
+   NETWORK
+   ========================================================= */
+
+#network.disconnected {
+    color: #a66d63;
+}
+
+
+/* =========================================================
+   VOLUME
+   ========================================================= */
+
+#pulseaudio.muted {
+    color: #918e82;
+}
+
+
+/* =========================================================
+   DATE
+   ========================================================= */
+
+#clock.date {
+    color: #b9b39e;
+}
+
+
+/* =========================================================
+   TIME
+   ========================================================= */
+
+#clock.time {
+    padding-left: 12px;
+    padding-right: 14px;
+
+    color: #e3dcc5;
+    font-weight: 600;
+}
