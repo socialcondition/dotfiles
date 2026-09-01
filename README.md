@@ -1,2 +1,2 @@
 # dotfiles
-dot files.
+these are my dotfiles, for my different set-ups.
