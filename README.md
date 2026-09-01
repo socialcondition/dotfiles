@@ -1,2 +1,2 @@
 # dotfiles
-these are my dotfiles, for my different set-ups.
+these are my dotfiles, for different set-ups.
